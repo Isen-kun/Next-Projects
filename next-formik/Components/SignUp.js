@@ -31,6 +31,7 @@ const SignUp = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.firstName}
+          // {...formik.getFieldProps("firstName")}
         />
         {formik.errors.firstName && formik.touched.firstName ? (
           <p>{formik.errors.firstName}</p>
